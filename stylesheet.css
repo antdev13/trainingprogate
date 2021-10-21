@@ -134,6 +134,11 @@ footer {
     background-color: rgb(253, 253, 100);
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
 /* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
