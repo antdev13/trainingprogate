@@ -162,6 +162,24 @@ footer {
 
 /* For mobile phones: */
 @media only screen and (max-width: 400px) {
+    .header-left {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(8, 8, 8);
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    }
+
+    .header-right a:hover {
+        background-color: yellow;
+    }
+    
     #banner {
         background-color: yellow;
         width: 100%;
@@ -179,16 +197,32 @@ footer {
 
 /* For Tablets */
 @media only screen and (max-width: 770px) and (min-width: 400px) { 
+    .header-left {
+        font-size: 30px;
+    }
+
+    .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: rgb(8, 8, 8);
+    display: block;
+    transition: all 0.5s;
+    }
+
+    .header-right a:hover {
+        background-color: yellow;
+    }
+    
     #banner {
         background-color:yellow;
         width: 100%;
     }
 
     p {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     @keyframes mymove {
-        50% { text-indent: 70%; }
+        50% { text-indent: 64%; }
     }
 }
