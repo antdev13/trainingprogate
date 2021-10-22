@@ -65,7 +65,7 @@ p {
 
 #banner {
     animation: mymove 15s infinite;
-    background-color: rgb(253, 253, 130);
+    background-color: yellow;
     width: 100%;
     border: 1px solid transparent;
 }
@@ -157,5 +157,38 @@ footer {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
+    }
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 400px) {
+    #banner {
+        background-color: yellow;
+        width: 100%;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    @keyframes mymove {
+        50% { text-indent: 50%; }
+    }
+}
+
+
+/* For Tablets */
+@media only screen and (max-width: 770px) and (min-width: 400px) { 
+    #banner {
+        background-color:yellow;
+        width: 100%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    
+    @keyframes mymove {
+        50% { text-indent: 70%; }
     }
 }
